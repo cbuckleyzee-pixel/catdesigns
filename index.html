@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Catherine Buckley – Summer 2026 Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Catherine Buckley – UW–Madison student studying consumer behavior, information science and game design. Portfolio, Summer 2026.">
+<meta property="og:title" content="Catherine Buckley – Portfolio">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231F6FB0'/%3E%3Ctext x='16' y='22' font-family='Inter,Arial' font-size='18' font-weight='600' text-anchor='middle' fill='%23FEFDFA'%3Ec%3C/text%3E%3C/svg%3E">
+<style>x-dc{display:block}</style>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1F6FB0}a:hover{color:#144E80}
+.card>div:first-child{transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s ease;transform-origin:center;position:relative}
+.card:hover>div:first-child{transform:scale(1.03);box-shadow:0 32px 64px -20px rgba(27,26,23,.3);z-index:2}
+.card>div.hero:first-child,.card:hover>div.hero:first-child{transform:none;box-shadow:none}
+.hero>*{transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.card:hover .hero>img{transform:translateX(-50%) scale(1.02) !important}
+.card:hover .hero>div{transform:scale(1.02) !important}
+.card:hover .hero2>div{transform:translateX(-50%) scale(1.02) !important}
+.card{cursor:pointer;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+</style>
+</helmet>
+<div style="box-sizing: border-box; min-height: 100vh; background: #FEFDFA; color: #1B1A17; font-family: 'Inter', sans-serif; display: flex; flex-direction: column">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 28px 64px; max-width: 1440px; width: 100%; box-sizing: border-box; margin: 0 auto">
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 16px; line-height: 1.5; font-weight: 500">
+<a href="#work" style="color: #1B1A17; text-decoration: none">work</a>
+<a href="about.html" style="color: #1B1A17; text-decoration: none">about</a>
+</nav>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 16px; line-height: 1.5; font-weight: 500">
+<a href="art.html" style="color: #1B1A17; text-decoration: none">art</a>
+<a href="#contact" style="color: #1B1A17; text-decoration: none">contact</a>
+<a href="https://drive.google.com/file/d/1m3MMdRg5T_IN1tyMy_2hE7D9yJF2hosC/view?usp=sharing" style="color: {{accent}}; text-decoration: none; display: inline-flex; align-items: center; gap: 5px">resume<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
+</nav>
+</header>
+
+<section id="about" style="max-width: 1440px; width: 100%; box-sizing: border-box; margin: 0 auto; display: flex; flex-direction: column; gap: 8px">
+<div style="position: relative; z-index: 1; pointer-events: none; padding: 28px 64px 0; display: flex; flex-direction: column; gap: 24px">
+<h1 style="margin: 0 0 0 -5px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 88px; line-height: 1.02; color: {{accent}}; width: 597px">Hello! I’m Cat,</h1>
+<p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 26px; line-height: 1.45; max-width: 560px; color: #4A463F">a consumer behavior, information science, and game design student @ UW – Madison.</p>
+</div>
+<div style="position: relative; width: 100%; overflow: hidden; display: flex; justify-content: flex-start; padding: 24px 16px 32px; margin-top: -252px; box-sizing: border-box">
+<div onMouseMove="{{ onMove }}" onMouseLeave="{{ onLeave }}" onClick="{{ onClick }}" style="position: relative; cursor: crosshair">
+<pre role="img" aria-label="Animated ASCII art of a beach with a sky of clouds, a gull, a small plane pulling a banner that reads Welcome, and waves slowly rolling onto the shore. Blue tuna leap out of the water now and then, moving the cursor over the scene stirs up blue characters, and clicking the sand builds a sandcastle." style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; color: #1B1A17">{{ art }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #2A74B0; font-weight: 500">{{ artOuter }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #134B80; font-weight: 500">{{ artInner }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #061A38; font-weight: 500">{{ artDeep }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #0E3A6E; font-weight: 500">{{ artDeep2 }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #1B1A17; font-weight: 700; -webkit-text-stroke: 0.5px #1B1A17">{{ artRed }}</pre>
+</div>
+</div>
+</section>
+
+<section id="currently" style="max-width: 1440px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 64px 88px; display: flex; flex-direction: column; gap: 28px; height: 269px">
+
+<h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 48px; line-height: 1.1; color: #4A463F">Currently</h2>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #E4E0D6; padding-top: 16px"><div style="font-size: 14px; font-weight: 500; color: #6B675F">Creating with</div><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 20px; line-height: 1.5; color: #4A463F"><li style="display: flex; align-items: center; gap: 14px"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; background: #1F6FB0; transform: rotate(45deg); border-radius: 1px"></span><span>PMA Consultants as a UI/UX Intern</span></li><li style="display: flex; align-items: center; gap: 14px"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; background: #1F6FB0; transform: rotate(45deg); border-radius: 1px"></span><span>Figma as a Campus Leader</span></li><li style="display: flex; align-items: center; gap: 14px"><span aria-hidden="true" style="flex: none; width: 8px; height: 8px; background: #1F6FB0; transform: rotate(45deg); border-radius: 1px"></span><span>Rodeo as a Campus Ambassador</span></li></ul></div>
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #E4E0D6; padding-top: 16px"><div style="font-size: 14px; font-weight: 500; color: #6B675F">Exploring</div><div style="font-size: 20px; line-height: 1.4; color: #4A463F">Projection mapping!</div></div>
+</div>
+
+</section>
+
+<section id="work" style="max-width: 1440px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 64px 96px; display: flex; flex-direction: column; gap: 72px">
+
+<h2 style="margin: 0 0 -32px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 48px; line-height: 1.1; color: #4A463F">Selected Work</h2>
+
+<article class="card" style="display: flex; flex-direction: column; gap: 24px; border-top: 1px solid #E4E0D6; padding-top: 32px">
+<div class="hero" style="position: relative; height: 380px; background: linear-gradient(135deg, #DCE9F6 0%, #C3D9EF 100%); border-radius: 4px; overflow: hidden; font-family: 'Inter', sans-serif"><a href="pma.html" aria-label="View the PMA Consultants Project Summit case study" style="position: absolute; inset: 0; z-index: 10; cursor: pointer"></a><img src="images/01cd4d2a232f5e242a39b8a35ec4f697.png" alt="Project Summit scheduling screen" draggable="false" style="position: absolute; left: 50%; top: 40px; width: 70%; transform: translateX(-50%); height: auto; border-radius: 10px; box-shadow: 0 18px 48px rgba(27,26,23,.18), 0 2px 8px rgba(27,26,23,.08)"><div style="position: absolute; right: 3.5%; top: 20px; width: 190px; padding: 12px 0; box-sizing: border-box; background: #fff; border-radius: 14px; box-shadow: 0 18px 48px rgba(27,26,23,.18), 0 2px 8px rgba(27,26,23,.08)"><div style="height: 33px; line-height: 33px; padding: 0 16px; font-size: 14px; color: #4B5360; white-space: nowrap">Calendar</div><div style="height: 33px; line-height: 33px; padding: 0 16px; font-size: 14px; color: #4B5360; white-space: nowrap">Constraints</div><div style="height: 33px; line-height: 33px; padding: 0 16px; font-size: 14px; color: #4B5360; white-space: nowrap">Edit Dates...</div><div style="height: 33px; line-height: 33px; padding: 0 16px; font-size: 14px; color: #4B5360; white-space: nowrap">Delete</div><div style="height: 33px; line-height: 33px; padding: 0 16px; font-size: 14px; color: #4B5360; white-space: nowrap">Object Properties...</div><div style="height: 33px; line-height: 33px; padding: 0 16px; font-size: 14px; color: #1B1A17; white-space: nowrap">Split...</div></div><div style="position: absolute; left: 3.5%; bottom: 20px; width: 380px; max-width: 60%; height: 170px; background: #fff; border-radius: 22px; box-shadow: 0 18px 48px rgba(27,26,23,.18), 0 2px 8px rgba(27,26,23,.08)"><div style="position: absolute; left: 22px; right: 22px; top: 0; height: 100%"><div style="position: absolute; left: 0px; top: 26px; width: 336px; text-align: center; font-size: 15px; line-height: 1; color: #1B1A17">MEP</div><div style="position: absolute; left: 0; right: 0; top: 52px; height: 16px; border-radius: 999px; background: #2FA84F"><span style="position: absolute; top: 50%; left: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span><span style="position: absolute; top: 50%; right: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span></div><div style="position: absolute; left: 0px; top: 92px; width: 100px; text-align: center; font-size: 15px; line-height: 1; color: #1B1A17">A</div><div style="position: absolute; top: 116px;"><div style="position: absolute; left: 0px; width: 100px; height: 16px; border-radius: 999px; background: #2FA84F"><span style="position: absolute; top: 50%; left: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span><span style="position: absolute; top: 50%; right: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span></div></div><div style="position: absolute; left: 118px; top: 92px; width: 100px; text-align: center; font-size: 15px; line-height: 1; color: #1B1A17">B</div><div style="position: absolute; top: 116px;"><div style="position: absolute; left: 118px; width: 100px; height: 16px; border-radius: 999px; background: #2FA84F"><span style="position: absolute; top: 50%; left: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span><span style="position: absolute; top: 50%; right: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span></div></div><div style="position: absolute; left: 236px; top: 92px; width: 100px; text-align: center; font-size: 15px; line-height: 1; color: #1B1A17">C</div><div style="position: absolute; top: 116px;"><div style="position: absolute; left: 236px; width: 100px; height: 16px; border-radius: 999px; background: #2FA84F"><span style="position: absolute; top: 50%; left: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span><span style="position: absolute; top: 50%; right: 2px; width: 11px; height: 11px; box-sizing: border-box; margin-top: -5.5px; border-radius: 50%; background: #fff; border: 2px solid #2FA84F"></span></div></div></div></div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; justify-content: space-between">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 36px">PMA Consultants Project Summit</h2>
+<div style="font-size: 14px; font-weight: 500; color: #6B675F">UI/UX · Adobe Xd · B2B SaaS</div>
+</div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4A463F">Contributed to redesigning Project Summit’s Split feature. Addressed user’s need of taking an existing activity and making it smaller.</p>
+<a href="pma.html" style="font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; align-self: flex-start">view case study<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
+</div>
+</div>
+</article>
+
+<article class="card" style="display: flex; flex-direction: column; gap: 24px; border-top: 1px solid #E4E0D6; padding-top: 32px">
+<div class="hero hero2" style="position: relative; height: 380px; background: linear-gradient(135deg, #E1EAF1 0%, #BED2E3 100%); border-radius: 4px; overflow: hidden"><a href="steam.html" aria-label="View the Steam Mobile App Redesign case study" style="position: absolute; inset: 0; z-index: 10; cursor: pointer"></a><div style="position: absolute; left: 24%; top: 12%; height: 80%; aspect-ratio: 402 / 874; transform: translateX(-50%); box-sizing: border-box; background: #121316; border-radius: 13.5% / 6.2%; box-shadow: 0 0 0 1.5px #A9ADB4, 0 22px 44px -12px rgba(20,40,70,.45)"><img src="images/e0762bc4713ce9ce56eda046a31c3e33.jpg" alt="Steam redesign news screen" draggable="false" style="position: absolute; left: 2.6%; right: 2.6%; top: 1.2%; bottom: 1.2%; width: 95.8%; height: 97.6%; object-fit: cover; border-radius: 11.5% / 5.3%; display: block"><span style="position: absolute; left: 50%; top: 1.2%; width: 31%; height: 2.6%; transform: translateX(-50%); background: #121316; border-radius: 0 0 40% 40% / 0 0 100% 100%"></span></div><div style="position: absolute; left: 76%; top: 12%; height: 80%; aspect-ratio: 402 / 874; transform: translateX(-50%); box-sizing: border-box; background: #121316; border-radius: 13.5% / 6.2%; box-shadow: 0 0 0 1.5px #A9ADB4, 0 22px 44px -12px rgba(20,40,70,.45)"><img src="images/b648279646a6b327f66dbed24d5f9285.png" alt="Steam redesign library screen" draggable="false" style="position: absolute; left: 2.6%; right: 2.6%; top: 1.2%; bottom: 1.2%; width: 95.8%; height: 97.6%; object-fit: cover; border-radius: 11.5% / 5.3%; display: block"><span style="position: absolute; left: 50%; top: 1.2%; width: 31%; height: 2.6%; transform: translateX(-50%); background: #121316; border-radius: 0 0 40% 40% / 0 0 100% 100%"></span></div><div style="position: absolute; left: 50%; top: 4%; height: 92%; aspect-ratio: 402 / 874; transform: translateX(-50%); box-sizing: border-box; background: #121316; border-radius: 13.5% / 6.2%; box-shadow: 0 0 0 1.5px #A9ADB4, 0 22px 44px -12px rgba(20,40,70,.45)"><img src="images/19d1c0ccbd0ff96a4e747bc665228fdb.jpg" alt="Steam redesign home screen" draggable="false" style="position: absolute; left: 2.6%; right: 2.6%; top: 1.2%; bottom: 1.2%; width: 95.8%; height: 97.6%; object-fit: cover; border-radius: 11.5% / 5.3%; display: block"><span style="position: absolute; left: 50%; top: 1.2%; width: 31%; height: 2.6%; transform: translateX(-50%); background: #121316; border-radius: 0 0 40% 40% / 0 0 100% 100%"></span></div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; justify-content: space-between">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 36px">Steam Mobile App Redesign</h2>
+<div style="font-size: 14px; font-weight: 500; color: #6B675F">UI/UX · Figma</div>
+</div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4A463F">Redesigned Steam’s mobile application to address wishlist management and navigation friction, giving the app a clearer, more intentional purpose beyond authentication (Steam Guard).</p>
+<a href="steam.html" style="font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; align-self: flex-start">view redesign<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
+</div>
+</div>
+</article>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px">
+<article class="card" style="display: flex; flex-direction: column; gap: 20px; border-top: 1px solid #E4E0D6; padding-top: 32px">
+<div style="height: 260px; background: #F0EDE4; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #6B675F; font-size: 22px; font-weight: 500; letter-spacing: 0.01em">Coming soon!</div>
+<h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 30px">Debrief App Redesign</h2>
+<div style="font-size: 14px; font-weight: 500; color: #6B675F">UI/UX · Adobe Xd</div>
+<p style="margin: 0; font-size: 17px; color: #4A463F">Debrief is a social app for capturing and revisiting shared experiences with friends.</p>
+<a href="debrief.html" style="font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; align-self: flex-start">view case study<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
+</article>
+<article class="card" style="display: flex; flex-direction: column; gap: 20px; border-top: 1px solid #E4E0D6; padding-top: 32px">
+<div style="height: 260px; background: #F0EDE4; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #6B675F; font-size: 22px; font-weight: 500; letter-spacing: 0.01em">Coming soon!</div>
+<h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 30px">CODA WORX Case Competition</h2>
+<div style="font-size: 14px; font-weight: 500; color: #6B675F">Product Management · Rapid Prototyping · Figma Make</div>
+<p style="margin: 0; font-size: 17px; color: #4A463F">Coming soon!</p>
+<a href="coda.html" style="font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; align-self: flex-start">view case study<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
+</article>
+</div>
+
+</section>
+
+<footer id="contact" style="margin-top: auto; border-top: 1px solid #E4E0D6">
+<div style="max-width: 1440px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 64px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 24px">
+<h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 48px; line-height: 1.1; color: #4A463F">Contact</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; font-size: 18px">
+<a href="https://www.linkedin.com/in/catherine-buckley-50882a2b1/" style="font-weight: 700; text-decoration: none">LinkedIn ↗</a>
+<span>Email: cdbuckley@wisc.edu</span>
+<span>Phone: 781 - 422 - 4580</span>
+</div>
+</div>
+</footer>
+
+<div aria-hidden="true" style="overflow: hidden; width: 100%; background: #FEFDFA"><pre role="img" aria-label="A still ASCII strip of sand" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; color: #1B1A17">      .   .'.  .    .. ..,.        ,    ',,.      ..    .  ,.:  .,.. .  . . . .,  ' .   . ., :'.. ,       ..  ,.  .    .. , ,  '. .,   , .., ..  .      ...   .   ' .                   .         . .  ,    ,.' ..    : .      '.     ,. ,.   '   .. .  ' .. . ,..       . ..  .,o       .  .          .    .     :   .    . . .: ..       ., '     '   .    .   .       .    , .    '.  . .., :  . . ,.     ..      ,   '' .  ., ,.   .  ..   .    ....
+   ...   ..   ,    .  .   .. .          .            .' .'  .  ,   :     .  . ..:..        .  . . .  .    ',  , ,.... :  .  .    .       .  .. .   .       ..   ',     ..   ..,  . ..   : .'  ..   . . '  ,    '. ..   , .. .,  ,.' '.       ,,   .'''o:.     .  ,.      .  ..  . .  ..   ~,                     .  :.. , .,.  ..   .....  ..,. ,   .  '   ..  :  ,  .. :   ..,.    . . .   .. .     ,   . .  . ,,.,  ' .~    .: .  .  . ,: ,,~ .. ,   ,
+ ...  .'  ....'. :    ,,'.'     .,, .,    .   , .     .  ...  , , . .    .    . . .  . ...   .  ,  .. ., . . , . .   '        ':    : ,.     . ..o '.  ..'..    : .   . .  ...,.  ', .. .    ..  . , .  . . .. .   .  o... ...  ,   ..  . . ~  . .. .. .. .  .  ,  .  ,        . . .~   . .  .    ... :~. .    .....  . . ...   .',. .   .  .. .'.:..   .. .  ,,  .' .,     ' , .,. ... .    .,. ,....'  .,. ,   .,,. ,  .'... ..: . .  ... ', ..,...   
+ .  .    . .,,.,. ..,:. ...,.    .,..,.o '....  . .'  .     ,,.  , .. .. ... .. ,.~      .. .     . ~ ..  .... .... .' :.  ..  , . ..    ,    ., ...   . , ,  . ...  ... :,.  .,   ,   ... .:... . ..:.... ...: . :, ,.   .   '  ...... . .. .    ,    . , . . .,.  . .. ... .   ....,. ,.  . . . , ., ..  ... . , .      .  ' ,,.   . '   .'  .  , . ~.       .  . '  .. .  ~.      .....  ..,   . .   . ,... .  .. '..  ..   ..,. , ,'  . . . .  ' ,  
+,..., .  ... .,.   o. ...  .  . ,.,.     .    .,. . .... ..   .   .,.   ..::. .'. ..'. ...., , . . :.   ...   .:...   ..... .,    ' .. ..,,.,,. .: .....,. ,.. .  . ..  .'' .... , .. .  ..   . .    .   . .   . , .,,.. ..   ...   ..: . ,.,.  ' . . . .... '.  . , . ..  .. . ,    ,,. .. .   ..   . ..: .     .  .  ...:....,...' .   ~ :   .. . .,.  ' .. .  . . . . . ..     :.:.:.'. .,.,   ...       .,     .' ..  ..  '   ..   .... . :. ,. ...,
+ .. .,. ....   '. ... ..  ..  . ..~ , .,.. ..   . .  ..    .... .......,'' , ....  ,..'.  .  ..  . .... ... , ...... ., .. :.'.. .   ., .. .:. .. .', ,..,.: ..,,  ... .  . ,.' ,,. ,...         . .. .,.     . .  ..    . .    '  ,.... .   ,...   .  .    ..,,. ,, ..:.....,  ..., ..  '   .' ,. ..'.  .   ...,  ... ...: .   . ..,.....  ,:. ... ,.. .  ..... .. ., ..   .  .    . . , . .. . .. . .:  .~   :. '' . .  .',,.   . .. ., ' . ..   ...,.
+. ..  ....  .. .  .  . .... ,' ..'. ...   .. .  ... . . ,,... ' ... ..  ...,.......'.. ...  :  .....,,  .... :..     ..,    .. ,.. . . ...:., . ',..  ..,.,:.. .. . ,.:.   .. ..... .. .:' .,. . .. ..  ....    :. ....,.. ...' ... ,.. . ... '   . .... ... ' ......~..,..,....'... ,., .. .  ...    ..  .   .'  ,     ..,. .:..'..  .. . .,...... :. ..   .... . .  .'.... ,  ....  , ..~.....,.' ..   ,,   . :....'....'   ... . .... ... ...' ... ..
+ ...  .:..,. .. ..'.  ..,.. .'.  ,.   ....  ....  ..o .... .'... ,. ,, ,  .'...'..  : .'...  ...., .. . ...... ., .... ,..,.... .  ,. ...... ,   '. '.... :.  .... ..... .  ... .. ,'.....:....,.  ..  .   ....  ....'  .....: .........  ....., .... .  ...  .... .  ,  . . ... :.  ..... , .. ..........:........... ..... ... .    :..,.  . ,, ... ... . . ..   ..  . .....  ...:.....,    ...',. ....  ...  ..   .  ...'.,. ..      ..   .. .  .:'~.
+,. : ...,........' ,. .:....,., ,.    ..., ... , .   . .... ..'...... . ..... ........  '. ~..    ..,.. .. ..,.....,    . .... .'.. .  ...'.. ,.:'. ..... . ...   ....., ........ . .... .'., :..   ... ... ......,.... . .. ...' '......'...   . .: .... ...,...,  ..... , .    ... . ..     ..., ....... : ... ......... . ... .,,...  ..... ....  .....  ... . , . ..,...... . ..    . ,....., :.... ....,.....  ..... ........,.,....,.:. .. ...:'. 
+      .    . .  ..,  . . .. ..  ,   .    , ..., . ',  '  . .  .   ... .   ::  .   . .:  '  ''...  ..   .    . .  .    . . ,        , .     '.,          ,   ,   . ,     :   :       .      .        ..  .  . ...'...    . . , .  . . '       .     : ..  .    .,     ,   '  , .  ,  . ,  .,. ,     . , ',     .,    .          ., .   ,  .   '.  ..   .    . .   ., .  . .. ..   . '    . .     , ,  ..  .  . .. .  ' . ..  ..   . :.' : .          ....
+   .     ...:  ..,.,. . :     . ,  .....  :, ,  ..     ..  .   '..   ... .. ,.. .   .,.    ..   :   ,  ..,.  ,....  .. ..,:. ,            ,  .... ,.  ...'   . :'.   . .    .,         .  . .    .,. ' .'.     .  ...  . ,    :.  . ,.,           :   ,..'   , , .        .  .   . .     .   : .,,  .  ..        ,,  ...  ..    .   ,   .   ..... .         ....:   .  :. :    .  ,. '   ,    ,'  . . .,.     .' . :..   ..   .,   .       ..     :   . 
+   . . , .. .:  ..   ..  .. . ' .   .. ''   . .  .  .     . .:,.,   '     ,. .   : ,  .'  . ..,. ..  .  : ..   ...  ..   . .   . .. ..    .  . .,.    ... ..'.   ..     ..        ,..' .   . ,.   . :  . ,..   .,.    . .. ,.    . . .   .   .  :  ,  ..      , .   ..  . ...   . . .'. . ,     ,, .   .   . ,     ,     . .   .  ..  .  : ...     , '    .. ... .     .        .  ..,.'... , :.   .:  .               .,.  .  '. '.,.. ..   , ....     
+   .   .. . .  . :,  , . .   .   .. . ..., .., .,.  . ,   ....  ,      : .  ,,  .  ..  .. . . .,      . , . '   '  .   ..: :.    ..  .     ,, . . . ..  . ... ,...     .....  .,      ' ... ...'     ,',   ,.. ..,..  . . .       ..  . ,   ,   ,.   .  .. . ....' .,  ...  .  .       .  , '       .  . .         ,  .     .      .    ,           . , .. ., .    ,.,...,  ,..  . .. .    , . :..    .,   .  ,.   ,  , .:..      '...:. ,., .  ..  . . 
+  .:  ... .:    .    . ,    ..   .,,.. ,.'    . ..     :....  ,'.  .  . . ,..      :      .'.. ,... ,:   . .  .   . .  ,.,     ...       : ,  .      .. ,.   '. .  ..    . : ..       '. '..,    ,,  : .   .   ,   ,'. . ..   ,., .   .   .   .. ..,. .  ,       ..  .    ,.   .,  .  .. '  . .. : . .,., ,   .:..,.  ....:. . .   .     . ,  :..', .             .      ..,  ..... .. .     .:,' :  ..  .., '  ., .'.    '  .  .:  ,.  . '  ,   .. . . 
+:.. .. ,.  . ,    .' ..   .    '   ..   .. ':.   ' ,:,   .  ,  . ,:    . ,.  .    ,  .   .  , , , ..,.  '.  .. ..,.. .   . , '    ,., ...' ..., :  ,'.  ..    . ..  ., .: .   ..'.      ..        .,  .    :        . .. .  '..  , .     ..'..      ',  .  , .   .   . . , ..'..,.. . '.' . ..  .' ... ,   . ,       . .., .,  ,:  ' . ' , .  ..:     ... ... ..  .       ,. .      ,  .   .      :.  .. .',.   .,  '.,     '   ,. ...      .  ,... '  .
+......'  .. . .   .,  .,., ,:. ,, ..  .,  ,..    ,.,,..  .. .....' . .    . . . .  . '.   . . . .... .. ..,    . .      . .  .  .    .. . :...      ., .  .   , .   '  ..  .  . . ,. ...,.. . .... '.. ..' , . .   :,   ', .,.. . . : .  ..,  .. ..  '   .    ,       . ..     . .,     .  ..  , '.,   . ..   ,      . .. . .:.: .  .....  .  . .   .. .  .  , . .. ' .  , .  .'.    :   ' . .  .,..,,    .   .. . , .   ,  ..  .  :.  .  .     .,. .   </pre></div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1F6FB0"},"$preview":{"width":1280,"height":2800}}'>
+const EXT = 28, COLS0 = 320, ROWS = 45 + EXT, HZ = 6 + EXT, SB = 23 + EXT, R = 15;
+const FONT = {
+W: ["X...X", "X...X", "X.X.X", "XX.XX", "X...X"],
+E: ["XXXXX", "X....", "XXXX.", "X....", "XXXXX"],
+L: ["X....", "X....", "X....", "X....", "XXXXX"],
+C: [".XXXX", "X....", "X....", "X....", ".XXXX"],
+O: [".XXX.", "X...X", "X...X", "X...X", ".XXX."],
+M: ["X...X", "XX.XX", "X.X.X", "X...X", "X...X"],
+"!": ["X", "X", "X", ".", "X"]
+};
+const WORD = "WELCOME!".split("");
+const BTXT = [0, 1, 2, 3, 4].map((r) => WORD.map((l) => FONT[l][r]).join("."));
+const BIN = BTXT[0].length + 6, BW2 = BIN + 2, PO = BW2 + 6;
+const BAN = ["+" + "-".repeat(BIN) + "+", "|" + "\x01".repeat(BIN) + "|"];
+for (let r = 0; r < 5; r++) BAN.push("|\x01\x01\x01" + BTXT[r].replace(/\./g, "\x01").replace(/X/g, "#") + "\x01\x01\x01|");
+BAN.push("|" + "\x01".repeat(BIN) + "|", "+" + "-".repeat(BIN) + "+");
+const PLANE = [
+"        _______________",
+"       |_______________|",
+"  __    | |         | |",
+"  \\\x01\\___|_|_________|_|__",
+"  [_______o___o___o____)=|",
+"  /_/    | |         | |",
+"         |_|_________|_|"];
+const PW = PO + Math.max(...PLANE.map((r) => r.length)), PH = 9;
+const PLC = (() => {
+const g = [];
+for (let r = 0; r < PH; r++) g.push(new Array(PW).fill(" "));
+for (let b = 0; b < PH; b++) for (let c = 0; c < BW2; c++) g[b][c] = BAN[b][c] === "\x01" ? "\x01" : BAN[b][c];
+for (let c = BW2; c < PO + 2; c++) g[4][c] = "-";
+for (let p = 0; p < PLANE.length; p++) {
+const row = PLANE[p], f = row.search(/\S/), l = row.length - 1;
+for (let c = f; c <= l; c++) g[1 + p][PO + c] = row[c] === " " ? "\x01" : row[c];
+}
+return g;
+})();
+const G1 = [["\\         /", " \\__   __/ ", "    \\_/    "], ["   _   _   ", "__/ \\_/ \\__", "           "]];
+const G2 = [["\\  .  /", " \\_v_/ "], [" _   _ ", "/ \\_/ \\"]];
+const SEA = " .,:;-~=+*#";
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this._t = 0; this._n = 0; this._timer = 0; this._mx = -999; this._my = -999; this._hover = false; this._sp = 0; this._reduced = false; this._fish = []; this._castles = []; this._cols = COLS0; this._cw = 3.6; this._fit = null;
+}
+componentDidMount() {
+this._fit = () => {
+const w = Math.min(document.documentElement.clientWidth || window.innerWidth || 1280, 1440);
+const c = Math.max(120, Math.min(420, Math.floor((w - 32) / this._cw)));
+if (c !== this._cols) { this._cols = c; this._castles = []; this.setState({ n: ++this._n }); }
+};
+this._fit();
+window.addEventListener('resize', this._fit);
+try { if (document.fonts && document.fonts.load) document.fonts.load('500 6px "DM Mono"').then(() => { const cv = document.createElement('canvas').getContext('2d'); cv.font = '500 6px "DM Mono"'; const m = cv.measureText('0').width; if (m > 2 && m < 6) { this._cw = m; this._fit(); } }).catch(() => {}); } catch (err) {}
+if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { this._reduced = true; return; }
+this._timer = setInterval(() => {
+this._t += 0.1;
+const now = this._t;
+this._fish = this._fish.filter((f) => now - f.t0 < f.dur);
+if (this._fish.length < 1 && Math.random() < 0.03) {
+const dir = Math.random() < 0.5 ? -1 : 1;
+this._fish.push({ x0: 40 + Math.random() * (this._cols - 80), y0: HZ + 8 + Math.floor(Math.random() * 5), dir, t0: now, dur: 2.8 + Math.random() * 0.6, sprite: this._makeTuna(dir) });
+}
+this._sp += ((this._hover ? 1 : 0) - this._sp) * 0.25;
+if (this._sp < 0.01) this._sp = 0;
+this.setState({ n: ++this._n });
+}, 100);
+}
+componentWillUnmount() { if (this._timer) clearInterval(this._timer); if (this._fit) window.removeEventListener("resize", this._fit); }
+_h(x, y) { const v = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453; return v - Math.floor(v); }
+_s(x, y) {
+const xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
+const u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
+const a = this._h(xi, yi), b = this._h(xi + 1, yi), c = this._h(xi, yi + 1), d = this._h(xi + 1, yi + 1);
+return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
+}
+_makeTuna(dir) {
+const W = 30, H = 7, cy = 3;
+const ch = [], mk = [];
+for (let r = 0; r < H; r++) { ch.push(new Array(W).fill(" ")); mk.push(new Array(W).fill(0)); }
+const put = (r, x, c, m) => { if (r >= 0 && r < H && x >= 0 && x < W) { ch[r][x] = c; mk[r][x] = m; } };
+for (let x = 0; x <= 5; x++) { const d = Math.round(2.6 - x * 0.45); put(cy - d, x, "\\", 4); put(cy + d, x, "/", 4); }
+for (let x = 2; x <= 7; x++) put(cy, x, "#", 4);
+for (let x = 6; x < W; x++) {
+const t = (x - 6) / (W - 7);
+const hh = t < 0.6 ? 0.6 + 1.1 * Math.sin(t / 0.6 * Math.PI / 2) : 1.7 - 1.1 * Math.pow((t - 0.6) / 0.4, 1.5);
+for (let r = 0; r < H; r++) {
+const dy = r - cy;
+if (Math.abs(dy) <= hh + 0.2) {
+if (dy < -hh * 0.25) put(r, x, "@", 3);
+else if (dy > hh * 0.3) put(r, x, "%", 2);
+else put(r, x, "#", 4);
+}
+}
+}
+const topOf = (x) => { for (let r = 0; r < H; r++) if (ch[r][x] !== " ") return r; return cy; };
+const botOf = (x) => { for (let r = H - 1; r >= 0; r--) if (ch[r][x] !== " ") return r; return cy; };
+let tp = topOf(13); put(tp - 1, 12, "/", 3); put(tp - 1, 13, "\\", 3);
+tp = topOf(21); put(tp - 1, 21, "/", 3);
+const bp = botOf(15); put(bp + 1, 15, "/", 4);
+put(cy - 1, W - 5, "O", 1);
+for (let r = cy - 1; r <= cy + 1; r++) if (ch[r][W - 9] !== " ") put(r, W - 9, ")", 1);
+if (dir < 0) {
+const sw = { "/": "\\", "\\": "/", ")": "(" };
+for (let r = 0; r < H; r++) { ch[r].reverse(); mk[r].reverse(); ch[r] = ch[r].map((c) => sw[c] || c); }
+}
+return { W, H, cy, ch, mk };
+}
+
+_makeCastle() {
+const R = Math.random;
+const W = 15 + 2 * Math.floor(R() * 4), H = 7 + Math.floor(R() * 3);
+const g = [];
+for (let r = 0; r < H; r++) g.push(new Array(W).fill(" "));
+const put = (r, c, ch) => { if (r >= 0 && r < H && c >= 0 && c < W) g[r][c] = ch; };
+const wall = 3 + Math.floor(R() * 2);
+for (let r = H - wall; r < H; r++) for (let c = 0; c < W; c++) put(r, c, "#");
+for (let c = 0; c < W; c += 2) put(H - wall - 1, c, "#");
+for (let c = 3; c < W - 3; c += 4) put(H - wall + 1, c, R() < 0.5 ? "+" : "o");
+const tower = (x0, tw, th) => {
+th = Math.min(th, H - 2);
+for (let r = H - th; r < H; r++) for (let c = x0; c < x0 + tw; c++) put(r, c, "#");
+for (let c = x0; c < x0 + tw; c++) if ((c - x0) % 2 === 1) put(H - th, c, " ");
+const cx = x0 + Math.floor(tw / 2);
+if (tw >= 5 && th >= wall + 2) put(H - th + 2, cx, R() < 0.5 ? "+" : "o");
+if (R() < 0.55) { put(H - th - 1, cx, "|"); put(H - th - 2, cx, "|"); put(H - th - 2, cx + 1, ">"); }
+else put(H - th - 1, cx, "^");
+};
+const tw = R() < 0.5 ? 3 : 5;
+const th = wall + 2 + Math.floor(R() * 2);
+tower(0, tw, th); tower(W - tw, tw, th);
+if (R() < 0.75) { const kw = R() < 0.5 ? 5 : 7; tower((W - kw) / 2, kw, th + 1 + Math.floor(R() * 2)); }
+if (W >= 19 && R() < 0.6) { tower(Math.floor(W / 4), 3, wall + 1); tower(W - Math.floor(W / 4) - 3, 3, wall + 1); }
+const dc = (W - 1) / 2;
+put(H - 1, dc - 1, "["); put(H - 1, dc, " "); put(H - 1, dc + 1, "]");
+put(H - 2, dc - 1, " "); put(H - 2, dc, "_"); put(H - 2, dc + 1, " ");
+return { rows: g.map((r) => r.join("")), W, H };
+}
+renderVals() {
+const COLS = this._cols, XO = Math.round(48 / this._cw);
+const t = this._t, sp = this._sp, mx = this._mx, my = this._my;
+const fishes = this._fish.map((f) => { const u = (t - f.t0) / f.dur; return { u, x0: f.x0, y0: f.y0, dir: f.dir, sp: f.sprite, cx: Math.round(f.x0 + f.dir * 34 * u), cy: Math.round(f.y0 - 4 * Math.max(2, f.y0 - HZ - 2 - f.sprite.cy) * u * (1 - u)), tilt: 1 - 2 * u }; });
+const fishCell = (f, xx, yy) => {
+const sp = f.sp, sx = xx - (f.cx - Math.floor(sp.W / 2));
+if (sx < 0 || sx >= sp.W || yy > f.y0) return null;
+const ss = -f.dir * Math.round(f.tilt * ((sx - sp.W / 2) / (sp.W / 2)) * 2);
+const r = yy - f.cy + sp.cy - ss;
+if (r < 0 || r >= sp.H || sp.ch[r][sx] === " ") return null;
+return [sp.ch[r][sx], sp.mk[r][sx]];
+};
+const castles = this._castles.map((k) => ({ left: k.left, base: k.base, rows: k.rows, W: k.W, H: k.H, p: this._reduced ? 1 : Math.min(1, Math.max(0, (t - k.t0) / (0.35 * k.H))) }));
+const pspan = COLS + PW + 20;
+const pph = t * 5.5 + 190 + XO + PW, pcy = Math.floor(pph / pspan);
+const plx = Math.round(((pph % pspan) + pspan) % pspan - PW);
+const pu = pcy === 0 ? 1 : Math.max(0, Math.min(1, (plx + PW - 250) / 90));
+const pa = Math.max(0, Math.min(1, (plx - (190 + XO)) / (COLS - (190 + XO)))), sm = (u) => 0.5 - 0.5 * Math.cos(Math.PI * u), ply = Math.round((pa < 0.41 ? 11 - 7 * sm(pa / 0.41) : 4 + 8 * sm((pa - 0.41) / 0.59)) + 0.8 * Math.sin(t * 0.45));
+const gl = (S, gx, gy, x, y) => { const r = y - gy, cc = x - gx; return r < 0 || r >= S.length || cc < 0 || cc >= S[0].length ? " " : S[r][cc]; };
+const WP = 120, WN = 4, Z0 = HZ + 1, WB = SB - 3;
+const wph = [];
+for (let k = 0; k < WN; k++) wph.push(((t + k * WP / WN) % WP) / WP);
+const wave = (x, y, s) => {
+if (y < Z0 - 1 || y > s + 4) return null;
+let out = null;
+for (let k = 0; k < WN; k++) {
+const p = wph[k] + 0.05 * Math.sin(x * 0.035 + 1.9 * k) + 0.025 * Math.sin(x * 0.12 + 3.1 * k);
+if (p < 0 || p >= 1) continue;
+if (p < 0.6) {
+const amp = p / 0.6, fy = Z0 + (WB - Z0) * Math.pow(amp, 1.5), dy = y - fy;
+if (dy >= -0.5 && dy < 0.5) out = amp < 0.3 ? "-" : amp < 0.6 ? "~" : "=";
+else if (dy >= -1.5 && dy < -0.5 && amp > 0.3) out = amp > 0.5 ? "_" : ".";
+else if (dy >= -2.5 && dy < -1.5 && amp > 0.55) out = "-";
+else if (dy >= 0.5 && dy < 1.5 && amp > 0.7) out = "'";
+else if (dy >= 0.5 && dy < 1.5 && amp > 0.45 && this._h(x, y) > 0.3) out = ":";
+} else if (p < 0.7) {
+const dy = y - WB, e = 1 - (p - 0.6) / 0.1;
+if (dy >= -0.5 && dy < 0.5) out = null;
+else if (dy >= -3 && dy < -0.5) { const hh = this._h(x + Math.floor(t * 6), y); if (hh < 0.55 * e + 0.15) out = hh < 0.2 ? "*" : hh < 0.35 ? "o" : "'"; }
+} else {
+const q = (p - 0.7) / 0.3, u = q < 0.45 ? q / 0.45 : 1 - (q - 0.45) / 0.55, F = WB + (s + 3 - WB) * Math.pow(u, 0.8), fade = q > 0.85 ? 1 - (q - 0.85) / 0.15 : 1;
+if (y >= WB - 1 && y <= F + 0.5) {
+const dn = (1 - (F - y) / (F - WB + 1.5)) * fade, hh = this._h(x * 1.3 + Math.floor(t * 3), y * 1.7);
+if (Math.abs(y - F) < 0.8 && fade > 0.3) out = hh < 0.7 ? "@" : "#";
+else if (hh < dn) out = dn > 0.6 ? "*" : dn > 0.3 ? "o" : ":";
+}
+}
+}
+return out;
+};
+const gx0 = 152 + XO, gsp = COLS + 14 - gx0;
+const g1 = gx0 + Math.floor((t * 2.0) % gsp);
+const g2 = gx0 + Math.floor((t * 1.3 + 150) % gsp);
+const up = (Math.floor(t * 2.5) % 2) === 0;
+const big = up ? ["\\", "_", "v", "_", "/"] : ["_", "-", "^", "-", "_"];
+const small = up ? ["\\", "v", "/"] : ["-", "^", "-"];
+let base = "", o1 = "", o2 = "", o3 = "", o4 = "", o5 = "";
+const GC = new Array(ROWS * COLS).fill(" "), GM = new Array(ROWS * COLS).fill(0);
+for (let y = 0; y < ROWS; y++) {
+let l0 = "", l1 = "", l2 = "", l3 = "", l4 = "";
+for (let x = 0; x < COLS; x++) {
+let c = " ";
+let mark = 0;
+const s = SB + 1.8 * Math.sin(t * 0.4 + x * 0.025) + 0.9 * Math.sin(x * 0.09 - t * 0.28);
+const dxc = x - mx, dyc = (y - my) * 4.6;
+const r = Math.sqrt(dxc * dxc + dyc * dyc);
+if (gl(G1[up ? 0 : 1], g1, EXT + 1, x, y) !== " ") {
+c = gl(G1[up ? 0 : 1], g1, EXT + 1, x, y); mark = 5;
+} else if (gl(G2[up ? 0 : 1], g2, EXT + 4, x, y) !== " ") {
+c = gl(G2[up ? 0 : 1], g2, EXT + 4, x, y); mark = 5;
+} else if (y < HZ) {
+const rmp = y < EXT + 8 ? Math.max(0, Math.min(1, (x - 150 - XO) / 28)) : 1;
+const vis = y < EXT + 8 ? 0.62 + 0.38 * rmp : 1, dvis = y < EXT + 8 ? 0.35 + 0.65 * rmp : 1;
+const cl = (this._s(x * 0.03 + t * 0.03, y * 0.16) * 0.65 + this._s(x * 0.09 + t * 0.05, y * 0.4) * 0.35) * (y >= HZ - 3 ? 0 : y === HZ - 4 ? 0.7 : 1) * (y < EXT + 8 ? rmp : 1);
+if (cl > 0.74) c = "=";
+else if (cl > 0.66) c = "~";
+else if (cl > 0.59) c = "-";
+else if (cl > 0.54) c = ".";
+else { const sk = this._h(x * 1.3 + 3, y * 2.1 + 5), dn = (0.1 + 0.22 * (y / HZ)) * dvis; c = sk < dn * 0.55 ? "." : sk < dn ? "\u0027" : " "; }
+} else if (y === HZ) {
+c = "_";
+} else if (y < s - 3) {
+const d = (y - HZ) / (SB - HZ);
+const bn = this._s(x * 0.06 + t * 0.05, y * 0.9 - t * 0.08) + 0.25 * d;
+c = bn > 1.0 ? "~" : bn > 0.9 ? "-" : bn > 0.8 ? "." : " ";
+const wc = wave(x, y, s);
+if (wc) c = wc;
+} else if (y < s) {
+const n = this._s(x * 0.3 + t * 0.2, y * 0.9);
+c = y >= s - 1 ? (x % 2 ? "~" : "-") : n > 0.7 ? "O" : n > 0.55 ? "o" : n > 0.4 ? "*" : n > 0.25 ? ":" : ".";
+const wc2 = wave(x, y, s);
+if (wc2) c = wc2;
+} else if (y < s + 4) {
+c = this._h(x, y) > 0.4 ? ":" : ",";
+const wc3 = y < s + 4 ? wave(x, y, s) : null;
+if (wc3) c = wc3;
+} else {
+const h = this._h(x, y), d = (y - s) * 0.004;
+c = h > 0.975 ? "o" : h > 0.93 - d ? "," : h > 0.85 - d ? "." : h > 0.79 - d ? "`" : " ";
+}
+for (let i = 0; i < fishes.length; i++) {
+const f = fishes[i];
+if (f.u < 0.16 || f.u > 0.84) {
+const bx = f.u < 0.5 ? f.x0 : f.x0 + f.dir * 34;
+if (y <= f.y0 && y >= f.y0 - 2 && Math.abs(x - bx) <= 6) { const hh = this._h(x + Math.floor(t * 10), y); if (hh > 0.4) { c = hh > 0.8 ? "o" : "'"; mark = 1; } }
+}
+if (Math.abs(x - f.cx) <= 15 && Math.abs(y - f.cy) <= 6 && y <= f.y0 + 1) {
+const hit = fishCell(f, x, y);
+if (hit) { c = hit[0]; mark = hit[1]; }
+}
+}
+const pc = x - plx, pr = y - ply;
+if (pcy === 0 && pr >= 0 && pr < PH && pc >= 0 && pc < PW) { const pch = PLC[pr][pc]; if (pch !== " ") { c = pch === "\x01" ? " " : pch; mark = pc < BW2 ? 3 : 0; } }
+for (let i = 0; i < castles.length; i++) {
+const k = castles[i];
+const lx = x - k.left, ly = y - (k.base - (k.H - 1));
+if (lx < 0 || lx >= k.W) continue;
+if (ly >= 0 && ly < k.H) {
+const ch = k.rows[ly][lx];
+const reveal = k.p * k.H - (k.H - 1 - ly);
+if (ch !== " " && reveal > 0) { c = reveal >= 1 || this._h(x * 3.1 + 7, y * 5.3) < reveal ? ch : (this._h(x, y) > 0.5 ? "," : "."); mark = 0; }
+}
+if (k.p < 1 && ly === (k.H - 2) - Math.floor(k.p * k.H) && this._h(x + Math.floor(t * 9), y) > 0.8) { c = "'"; mark = 0; }
+}
+GC[y * COLS + x] = c; GM[y * COLS + x] = mark;
+}
+}
+if (sp > 0.02) {
+const RR = 26, GC0 = GC.slice(), GM0 = GM.slice();
+for (let y = 0; y < ROWS; y++) {
+const fdy = (y - my) * 1.95;
+if (Math.abs(fdy) >= RR) continue;
+for (let x = 0; x < COLS; x++) {
+const fdx = x - mx, d = Math.sqrt(fdx * fdx + fdy * fdy);
+if (d >= RR || d === 0) continue;
+const k = 1 - d / RR; let d2 = d - sp * 11 * Math.pow(k, 1.4), ang = sp * 1.3 * k * k * Math.sin(t * 5 + d * 0.15);
+let c2 = " ", m2 = 0;
+d2 = Math.max(d2, 1 + this._h(x * 1.9 + Math.floor(t * 8), y * 2.7) * 9);
+if (d2 > 0) {
+const ca = Math.cos(ang), sa = Math.sin(ang), ux = fdx / d, uy = fdy / d, rx = ux * ca - uy * sa, ry = ux * sa + uy * ca;
+let sx = Math.round(mx + rx * d2), sy = Math.round(my + (ry * d2) / 1.95);
+if (this._h(x * 2.3 + Math.floor(t * 12), y * 3.1) < k * sp * 0.4) { sx += Math.round((this._h(x, y + Math.floor(t * 12)) - 0.5) * 8 * k); sy += Math.round((this._h(y, x + Math.floor(t * 12)) - 0.5) * 3 * k); }
+if (sx >= 0 && sx < COLS && sy >= 0 && sy < ROWS) { c2 = GC0[sy * COLS + sx]; m2 = GM0[sy * COLS + sx]; }
+}
+GC[y * COLS + x] = c2; GM[y * COLS + x] = m2;
+}
+}
+}
+for (let y = 0; y < ROWS; y++) {
+let l0 = "", l1 = "", l2 = "", l3 = "", l4 = "", l5 = "";
+for (let x = 0; x < COLS; x++) {
+const c = GC[y * COLS + x], mark = GM[y * COLS + x];
+l0 += mark === 0 ? c : " "; l1 += mark === 1 ? c : " "; l2 += mark === 2 ? c : " "; l3 += mark === 3 ? c : " "; l4 += mark === 4 ? c : " "; l5 += mark === 5 ? c : " ";
+}
+const nl = y < ROWS - 1 ? "\n" : "";
+base += l0.replace(/\s+$/, "") + nl; o1 += l1.replace(/\s+$/, "") + nl; o2 += l2.replace(/\s+$/, "") + nl; o3 += l3.replace(/\s+$/, "") + nl; o4 += l4.replace(/\s+$/, "") + nl; o5 += l5.replace(/\s+$/, "") + nl;
+}
+return {
+accent: this.props.accent ?? "#1F6FB0",
+art: base, artOuter: o1, artInner: o2, artDeep: o3, artDeep2: o4, artRed: o5,
+onMove: (e) => {
+if (this._reduced) return;
+const rc = e.currentTarget.getBoundingClientRect();
+this._mx = ((e.clientX - rc.left) / rc.width) * COLS;
+this._my = ((e.clientY - rc.top) / rc.height) * ROWS;
+this._hover = true;
+},
+onLeave: () => { this._hover = false; },
+onClick: (e) => {
+const rc = e.currentTarget.getBoundingClientRect();
+const cx = ((e.clientX - rc.left) / rc.width) * COLS;
+const cy = ((e.clientY - rc.top) / rc.height) * ROWS;
+if (cy < SB + 2) return;
+const k = this._makeCastle();
+const left = Math.max(0, Math.min(COLS - k.W, Math.round(cx) - Math.floor(k.W / 2)));
+const base = Math.max(SB + 2, Math.min(ROWS - 1, Math.round(cy)));
+this._castles.push({ left, base, rows: k.rows, W: k.W, H: k.H, t0: this._t });
+if (this._castles.length > 8) this._castles.shift();
+this.setState({ n: ++this._n });
+}
+};
+}
+}
+</script>
+<script src="./dc-lite.js"></script>
+</body>
+</html>
