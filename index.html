@@ -49,12 +49,12 @@ a{color:#1F6FB0}a:hover{color:#144E80}
 </div>
 <div style="position: relative; width: 100%; overflow: hidden; display: flex; justify-content: flex-start; padding: 24px 16px 32px; margin-top: -252px; box-sizing: border-box">
 <div onMouseMove="{{ onMove }}" onMouseLeave="{{ onLeave }}" onClick="{{ onClick }}" style="position: relative; cursor: crosshair">
-<pre role="img" aria-label="Animated ASCII art of a beach with a sky of clouds, a gull, a small plane pulling a banner that reads Welcome, and waves slowly rolling onto the shore. Blue tuna leap out of the water now and then, moving the cursor over the scene stirs up blue characters, and clicking the sand builds a sandcastle." style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; color: #1B1A17">{{ art }}</pre>
-<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #2A74B0; font-weight: 500">{{ artOuter }}</pre>
-<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #134B80; font-weight: 500">{{ artInner }}</pre>
-<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #061A38; font-weight: 500">{{ artDeep }}</pre>
-<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #0E3A6E; font-weight: 500">{{ artDeep2 }}</pre>
-<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #1B1A17; font-weight: 700; -webkit-text-stroke: 0.5px #1B1A17">{{ artRed }}</pre>
+<pre role="img" aria-label="Animated ASCII art of a beach with a sky of clouds, a gull, a small plane pulling a banner that reads Welcome on larger screens, and waves slowly rolling onto the shore. Blue tuna leap out of the water now and then, moving the cursor over the scene stirs up blue characters, and clicking the sand builds a sandcastle." style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; color: #1B1A17">{{ art }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #2A74B0; font-weight: 500">{{ artOuter }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #134B80; font-weight: 500">{{ artInner }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #061A38; font-weight: 500">{{ artDeep }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #0E3A6E; font-weight: 500">{{ artDeep2 }}</pre>
+<pre aria-hidden="true" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; position: absolute; left: 0; top: 0; pointer-events: none; color: #1B1A17; font-weight: 700; -webkit-text-stroke: 0.5px #1B1A17">{{ artRed }}</pre>
 </div>
 </div>
 </section>
@@ -103,19 +103,17 @@ a{color:#1F6FB0}a:hover{color:#144E80}
 </article>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px">
-<article class="card" style="display: flex; flex-direction: column; gap: 20px; border-top: 1px solid #E4E0D6; padding-top: 32px">
+<article style="display: flex; flex-direction: column; gap: 20px; border-top: 1px solid #E4E0D6; padding-top: 32px">
 <div style="height: 260px; background: #F0EDE4; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #6B675F; font-size: 22px; font-weight: 500; letter-spacing: 0.01em">Coming soon!</div>
 <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 30px">Debrief App Redesign</h2>
 <div style="font-size: 14px; font-weight: 500; color: #6B675F">UI/UX · Adobe Xd</div>
 <p style="margin: 0; font-size: 17px; color: #4A463F">Debrief is a social app for capturing and revisiting shared experiences with friends.</p>
-<a href="debrief.html" style="font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; align-self: flex-start">view case study<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
 </article>
-<article class="card" style="display: flex; flex-direction: column; gap: 20px; border-top: 1px solid #E4E0D6; padding-top: 32px">
+<article style="display: flex; flex-direction: column; gap: 20px; border-top: 1px solid #E4E0D6; padding-top: 32px">
 <div style="height: 260px; background: #F0EDE4; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #6B675F; font-size: 22px; font-weight: 500; letter-spacing: 0.01em">Coming soon!</div>
 <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 30px">CODA WORX Case Competition</h2>
 <div style="font-size: 14px; font-weight: 500; color: #6B675F">Product Management · Rapid Prototyping · Figma Make</div>
 <p style="margin: 0; font-size: 17px; color: #4A463F">Coming soon!</p>
-<a href="coda.html" style="font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; align-self: flex-start">view case study<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"></path></svg></a>
 </article>
 </div>
 
@@ -132,7 +130,7 @@ a{color:#1F6FB0}a:hover{color:#144E80}
 </div>
 </footer>
 
-<div aria-hidden="true" style="overflow: hidden; width: 100%; background: #FEFDFA"><pre role="img" aria-label="A still ASCII strip of sand" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; user-select: none; color: #1B1A17">      .   .'.  .    .. ..,.        ,    ',,.      ..    .  ,.:  .,.. .  . . . .,  ' .   . ., :'.. ,       ..  ,.  .    .. , ,  '. .,   , .., ..  .      ...   .   ' .                   .         . .  ,    ,.' ..    : .      '.     ,. ,.   '   .. .  ' .. . ,..       . ..  .,o       .  .          .    .     :   .    . . .: ..       ., '     '   .    .   .       .    , .    '.  . .., :  . . ,.     ..      ,   '' .  ., ,.   .  ..   .    ....
+<div aria-hidden="true" style="overflow: hidden; width: 100%; background: #FEFDFA"><pre role="img" aria-label="A still ASCII strip of sand" style="margin: 0; font-family: 'DM Mono', ui-monospace, Menlo, monospace; font-size: 6px; line-height: 7px; letter-spacing: 0; white-space: pre; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; user-select: none; color: #1B1A17">      .   .'.  .    .. ..,.        ,    ',,.      ..    .  ,.:  .,.. .  . . . .,  ' .   . ., :'.. ,       ..  ,.  .    .. , ,  '. .,   , .., ..  .      ...   .   ' .                   .         . .  ,    ,.' ..    : .      '.     ,. ,.   '   .. .  ' .. . ,..       . ..  .,o       .  .          .    .     :   .    . . .: ..       ., '     '   .    .   .       .    , .    '.  . .., :  . . ,.     ..      ,   '' .  ., ,.   .  ..   .    ....
    ...   ..   ,    .  .   .. .          .            .' .'  .  ,   :     .  . ..:..        .  . . .  .    ',  , ,.... :  .  .    .       .  .. .   .       ..   ',     ..   ..,  . ..   : .'  ..   . . '  ,    '. ..   , .. .,  ,.' '.       ,,   .'''o:.     .  ,.      .  ..  . .  ..   ~,                     .  :.. , .,.  ..   .....  ..,. ,   .  '   ..  :  ,  .. :   ..,.    . . .   .. .     ,   . .  . ,,.,  ' .~    .: .  .  . ,: ,,~ .. ,   ,
  ...  .'  ....'. :    ,,'.'     .,, .,    .   , .     .  ...  , , . .    .    . . .  . ...   .  ,  .. ., . . , . .   '        ':    : ,.     . ..o '.  ..'..    : .   . .  ...,.  ', .. .    ..  . , .  . . .. .   .  o... ...  ,   ..  . . ~  . .. .. .. .  .  ,  .  ,        . . .~   . .  .    ... :~. .    .....  . . ...   .',. .   .  .. .'.:..   .. .  ,,  .' .,     ' , .,. ... .    .,. ,....'  .,. ,   .,,. ,  .'... ..: . .  ... ', ..,...   
  .  .    . .,,.,. ..,:. ...,.    .,..,.o '....  . .'  .     ,,.  , .. .. ... .. ,.~      .. .     . ~ ..  .... .... .' :.  ..  , . ..    ,    ., ...   . , ,  . ...  ... :,.  .,   ,   ... .:... . ..:.... ...: . :, ,.   .   '  ...... . .. .    ,    . , . . .,.  . .. ... .   ....,. ,.  . . . , ., ..  ... . , .      .  ' ,,.   . '   .'  .  , . ~.       .  . '  .. .  ~.      .....  ..,   . .   . ,... .  .. '..  ..   ..,. , ,'  . . . .  ' ,  
@@ -304,6 +302,7 @@ return [sp.ch[r][sx], sp.mk[r][sx]];
 const castles = this._castles.map((k) => ({ left: k.left, base: k.base, rows: k.rows, W: k.W, H: k.H, p: this._reduced ? 1 : Math.min(1, Math.max(0, (t - k.t0) / (0.35 * k.H))) }));
 const pspan = COLS + PW + 20;
 const pph = t * 5.5 + 190 + XO + PW, pcy = Math.floor(pph / pspan);
+const NOPLANE = (document.documentElement.clientWidth || window.innerWidth || 1280) < 700;
 const plx = Math.round(((pph % pspan) + pspan) % pspan - PW);
 const pu = pcy === 0 ? 1 : Math.max(0, Math.min(1, (plx + PW - 250) / 90));
 const pa = Math.max(0, Math.min(1, (plx - (190 + XO)) / (COLS - (190 + XO)))), sm = (u) => 0.5 - 0.5 * Math.cos(Math.PI * u), ply = Math.round((pa < 0.41 ? 11 - 7 * sm(pa / 0.41) : 4 + 8 * sm((pa - 0.41) / 0.59)) + 0.8 * Math.sin(t * 0.45));
@@ -401,7 +400,7 @@ if (hit) { c = hit[0]; mark = hit[1]; }
 }
 }
 const pc = x - plx, pr = y - ply;
-if (pcy === 0 && pr >= 0 && pr < PH && pc >= 0 && pc < PW) { const pch = PLC[pr][pc]; if (pch !== " ") { c = pch === "\x01" ? " " : pch; mark = pc < BW2 ? 3 : 0; } }
+if (!NOPLANE && pcy === 0 && pr >= 0 && pr < PH && pc >= 0 && pc < PW) { const pch = PLC[pr][pc]; if (pch !== " ") { c = pch === "\x01" ? " " : pch; mark = pc < BW2 ? 3 : 0; } }
 for (let i = 0; i < castles.length; i++) {
 const k = castles[i];
 const lx = x - k.left, ly = y - (k.base - (k.H - 1));

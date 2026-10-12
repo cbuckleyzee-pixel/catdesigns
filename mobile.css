@@ -53,3 +53,7 @@ x-dc > div > header { position: relative; z-index: 5; }
   /* the home hero is a full-bleed scene: no side padding on it */
   #about { padding-left: 0 !important; padding-right: 0 !important; }
 }
+
+/* iPhones can auto-enlarge small text. The beach scene is several stacked layers that must share
+   identical text metrics, so switch that off (otherwise the fish/plane layers drift out of line). */
+html, body, x-dc, pre { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
