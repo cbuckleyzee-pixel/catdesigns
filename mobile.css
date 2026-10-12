@@ -45,3 +45,11 @@
   .dia-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch; }
   .dia-scroll > div { width: 640px !important; max-width: none !important; }
 }
+
+/* keep the top nav above the hero scene so its links stay tappable */
+x-dc > div > header { position: relative; z-index: 5; }
+
+@media (max-width: 700px) {
+  /* the home hero is a full-bleed scene: no side padding on it */
+  #about { padding-left: 0 !important; padding-right: 0 !important; }
+}

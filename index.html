@@ -199,7 +199,7 @@ this._t = 0; this._n = 0; this._timer = 0; this._mx = -999; this._my = -999; thi
 componentDidMount() {
 this._fit = () => {
 const w = Math.min(document.documentElement.clientWidth || window.innerWidth || 1280, 1440);
-const c = Math.max(120, Math.min(420, Math.floor((w - 32) / this._cw)));
+const c = Math.max(90, Math.min(420, Math.floor((w - 32) / this._cw)));
 if (c !== this._cols) { this._cols = c; this._castles = []; this.setState({ n: ++this._n }); }
 };
 this._fit();
