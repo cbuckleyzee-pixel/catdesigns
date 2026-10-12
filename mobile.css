@@ -1,0 +1,47 @@
+/* Phone-only overrides. Nothing here applies above 700px wide, so the desktop layout is untouched. */
+@media (max-width: 700px) {
+  html, body { overflow-x: hidden; }
+  x-dc > div { overflow-x: clip; }
+
+  /* tighter side padding */
+  x-dc > div > header,
+  x-dc > div > section,
+  x-dc > div > main,
+  x-dc > div > footer > div { padding-left: 20px !important; padding-right: 20px !important; }
+  x-dc > div > header { padding-top: 20px !important; padding-bottom: 8px !important; gap: 4px 16px !important; }
+  x-dc > div > header nav { gap: 8px 22px !important; }
+  x-dc > div > footer > div { padding-top: 40px !important; padding-bottom: 40px !important; }
+
+  /* type scale */
+  x-dc h1 { font-size: 44px !important; line-height: 1.05 !important; width: auto !important; max-width: 100% !important; margin-left: 0 !important; }
+  x-dc [style*="font-size: 88px"] { font-size: 52px !important; }
+  x-dc [style*="font-size: 48px"] { font-size: 34px !important; }
+  x-dc [style*="font-size: 36px"] { font-size: 26px !important; }
+  x-dc [style*="font-size: 30px"] { font-size: 24px !important; }
+  x-dc [style*="font-size: 26px"] { font-size: 20px !important; line-height: 1.45 !important; }
+  x-dc [style*="font-size: 20px"] { font-size: 18px !important; }
+
+  /* home */
+  #about > div:first-child { padding-left: 20px !important; padding-right: 20px !important; padding-top: 12px !important; gap: 16px !important; }
+  #about h1 { font-size: 44px !important; }
+  #about > div:nth-child(2) { margin-top: -215px !important; }
+  #currently { height: auto !important; padding-bottom: 40px !important; gap: 20px !important; }
+  #work { padding-bottom: 48px !important; gap: 48px !important; }
+  #work > h2 { margin-bottom: -24px !important; }
+  .hero { height: 230px !important; }
+  .hero:not(.hero2) > div { display: none !important; }
+  .hero:not(.hero2) > img { width: 90% !important; top: 18px !important; }
+  #work article { gap: 16px !important; padding-top: 24px !important; }
+
+  /* about page */
+  x-dc > div > section[style*="168px"] { padding-bottom: 56px !important; padding-top: 12px !important; gap: 32px !important; }
+  x-dc > div > section[style*="justify-content: center"] { padding-bottom: 48px !important; }
+
+  /* case studies */
+  x-dc > div > main { padding-top: 24px !important; padding-bottom: 56px !important; }
+  x-dc main section { gap: 12px 24px !important; padding-top: 28px !important; padding-bottom: 28px !important; }
+
+  /* wide diagram: keep it readable and let it scroll sideways */
+  .dia-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch; }
+  .dia-scroll > div { width: 640px !important; max-width: none !important; }
+}

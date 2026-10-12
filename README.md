@@ -7,6 +7,7 @@ Plain static site (no build step). Open `index.html` through any static server, 
 
 ## Files
 - `dc-lite.js` – tiny runtime that powers the pages' interactive bits (ASCII beach, art-board drag + lightbox, side navs). Every page loads it.
+- `mobile.css` – phone-only layout fixes (applies under 700px wide, desktop is unaffected).
 - `images/` – all photos and screenshots.
 - `vercel.json` – turns on clean URLs (`/about` instead of `/about.html`).
 
